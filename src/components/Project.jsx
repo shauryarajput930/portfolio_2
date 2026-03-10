@@ -4,26 +4,12 @@ import weatherProImage from "../assets/weather pro.png";
 import chatterImage from "../assets/chatter.png";
 import certificatesImage from "../assets/certificates.png";
 import birthdayWishImage from "../assets/birthday wish.png";
+import githubAnalyzerImage from "../assets/github-analyzer.png";
 
 const Project = () => {
   const projects = [
-     {
-      id: 1,
-      title: "Weather Pro – Advanced Weather Website",
-  description:
-    "A responsive weather website built using HTML, CSS, and JavaScript with real-time API integration. Features city-based search, dynamic weather updates, and a clean modern UI.",
-  image: weatherProImage, // use your own screenshot
-  technologies: ["HTML", "CSS", "JavaScript", "REST API", "Responsive Design"],
-  githubUrl: "https://github.com/shauryarajput930/weather-pro",
-  liveUrl: "https://shauryarajput930.github.io/weather-pro/",
-  date: "Jan 2026",
-  status: "completed",
-  featured: false,
-  category: "Frontend"
-    },
-
-     {
-  id: 2,
+    {
+  id: 1,
   title: "Chatter – Real-Time Chat Website",
   description:
     "A real-time chat website built using HTML, CSS, and JavaScript with backend-as-a-service integration for authentication and live messaging. Focused on implementing interactive UI, dynamic message updates, and responsive design.",
@@ -37,8 +23,38 @@ const Project = () => {
   category: "Frontend"
 },
 
+{
+  id: 2,
+  title: "GitHub Profile Analyzer",
+  description:
+    "A React-based web application that fetches and analyzes GitHub user data using the GitHub API. Users can search any GitHub username to view profile information, repositories, followers, and activity insights in a clean dashboard interface.",
+  image: githubAnalyzerImage,
+  technologies: ["React", "JavaScript", "GitHub API", "CSS", "Responsive Design"],
+  githubUrl: "https://github.com/shauryarajput930/github-profile-analyzer",
+  liveUrl: "https://gitprofile-analyzer.netlify.app/",
+  date: "Mar 2026",
+  status: "completed",
+  featured: false,
+  category: "Frontend"
+},
+
+     {
+      id: 3,
+      title: "Weather Pro – Advanced Weather Website",
+  description:
+    "A responsive weather website built using HTML, CSS, and JavaScript with real-time API integration. Features city-based search, dynamic weather updates, and a clean modern UI.",
+  image: weatherProImage, // use your own screenshot
+  technologies: ["HTML", "CSS", "JavaScript", "REST API", "Responsive Design"],
+  githubUrl: "https://github.com/shauryarajput930/weather-pro",
+  liveUrl: "https://shauryarajput930.github.io/weather-pro/",
+  date: "Jan 2026",
+  status: "completed",
+  featured: false,
+  category: "Frontend"
+    },
+
     {
-  id: 3,
+  id: 4,
   title: "Certificates – Personal Achievement Showcase",
   description:
     "A responsive certificates showcase website built using HTML, CSS, and JavaScript to organize and display academic and technical achievements in a clean layout.",
@@ -51,8 +67,9 @@ const Project = () => {
   featured: true,
   category: "Frontend"
 },
+
     {
-  id: 4,
+  id: 5,
   title: "Birthday Vibes – Interactive Birthday Experience",
   description:
     "An interactive birthday website built using HTML, CSS, JavaScript, and basic Tailwind CSS. Features animated transitions, background music, a photo gallery, and a guided user flow designed as a complete interactive experience.",
@@ -62,7 +79,7 @@ const Project = () => {
   liveUrl: "https://birthday-vibes.netlify.app/",
   date: "Feb 2026",
   status: "completed",
-  featured: false,
+  featured: true,
   category: "Frontend"
 },
 
