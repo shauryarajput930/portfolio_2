@@ -2,6 +2,7 @@ import React from "react";
 import { Calendar, ExternalLink, Github, Terminal, Code2, Database } from "lucide-react";
 import weatherProImage from "../assets/weather pro.png";
 import chatterImage from "../assets/chatter.png";
+import aiChatImage from "../assets/ai-chat.png";
 import certificatesImage from "../assets/certificates.png";
 import birthdayWishImage from "../assets/birthday wish.png";
 import githubAnalyzerImage from "../assets/github-analyzer.png";
@@ -40,21 +41,36 @@ const Project = () => {
 
      {
       id: 3,
-      title: "Weather Pro – Advanced Weather Website",
-  description:
-    "A responsive weather website built using HTML, CSS, and JavaScript with real-time API integration. Features city-based search, dynamic weather updates, and a clean modern UI.",
-  image: weatherProImage, // use your own screenshot
-  technologies: ["HTML", "CSS", "JavaScript", "REST API", "Responsive Design"],
-  githubUrl: "https://github.com/shauryarajput930/weather-pro",
-  liveUrl: "https://shauryarajput930.github.io/weather-pro/",
-  date: "Jan 2026",
-  status: "completed",
-  featured: false,
-  category: "Frontend"
+      title: "AI Chatbot",
+      description:
+        "An AI-powered chatbot built using HTML, CSS, and JavaScript with API integration. Users can interact with the chatbot in real-time and receive dynamic responses through asynchronous API requests.",
+      image: aiChatImage,
+      technologies: ["HTML", "CSS", "JavaScript", "REST API"],
+      githubUrl: "https://github.com/shauryarajput930/ai-chat",
+      liveUrl: "https://shauryarajput930.github.io/ai-chat/",
+      date: "2026",
+      status: "completed",
+      featured: false,
+      category: "Frontend"
     },
 
     {
-  id: 4,
+      id: 4,
+      title: "Weather Pro – Advanced Weather Website",
+      description:
+        "A responsive weather website built using HTML, CSS, and JavaScript with real-time API integration. Features city-based search, dynamic weather updates, and a clean modern UI.",
+      image: weatherProImage, // use your own screenshot
+      technologies: ["HTML", "CSS", "JavaScript", "REST API", "Responsive Design"],
+      githubUrl: "https://github.com/shauryarajput930/weather-pro",
+      liveUrl: "https://shauryarajput930.github.io/weather-pro/",
+      date: "Jan 2026",
+      status: "completed",
+      featured: true,
+      category: "Frontend"
+    },
+
+    {
+  id: 5,
   title: "Certificates – Personal Achievement Showcase",
   description:
     "A responsive certificates showcase website built using HTML, CSS, and JavaScript to organize and display academic and technical achievements in a clean layout.",
@@ -69,7 +85,7 @@ const Project = () => {
 },
 
     {
-  id: 5,
+  id: 6,
   title: "Birthday Vibes – Interactive Birthday Experience",
   description:
     "An interactive birthday website built using HTML, CSS, JavaScript, and basic Tailwind CSS. Features animated transitions, background music, a photo gallery, and a guided user flow designed as a complete interactive experience.",
@@ -79,7 +95,7 @@ const Project = () => {
   liveUrl: "https://birthday-vibes.netlify.app/",
   date: "Feb 2026",
   status: "completed",
-  featured: true,
+  featured: false,
   category: "Frontend"
 },
 
