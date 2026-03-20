@@ -48,7 +48,7 @@ const Project = () => {
       technologies: ["HTML", "CSS", "JavaScript", "REST API"],
       githubUrl: "https://github.com/shauryarajput930/ai-chat",
       liveUrl: "https://shauryarajput930.github.io/ai-chat/",
-      date: "2026",
+      date: "Mar 2026",
       status: "completed",
       featured: false,
       category: "Frontend"
