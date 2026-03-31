@@ -10,6 +10,7 @@ import {
   Database,
   Code
 } from "lucide-react";
+import axios from "axios";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -129,18 +130,13 @@ const Contact = () => {
     
     try {
       // Using EmailJS service to send emails directly to your Gmail
-      const serviceID = 'service_your_service_id'; // You'll need to set this up
-      const templateID = 'template_your_template_id'; // You'll need to set this up
-      const publicKey = 'your_public_key'; // You'll need to set this up
-      
-      // For now, let's use a simple mailto solution that will work immediately
-      const subject = encodeURIComponent(formData.subject);
-      const body = encodeURIComponent(
-        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-      );
-      
-      // Open email client with pre-filled data
-      window.open(`mailto:shauryarajput930@gmail.com?subject=${subject}&body=${body}`, '_blank');
+      await axios.post('https://portfolio-contact-form-backend.onrender.com/api/contact', {
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message
+        
+      });
       
       // Show success message
       setSubmitted(true);
